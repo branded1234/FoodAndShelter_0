@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbeque</title>
+    <link rel="icon" href="images/download.png" type="image/icon type">
+<link rel="stylesheet" href="Barbeque.css">
+<script src="https://kit.fontawesome.com/c9bcffc57e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Header section start-->
+    <header>
+        <a href="#" class="logo"><i class="fa fa-utensils"></i>Foodies.</a>
+        <nav class="navbar">
+            <a class="active" href="./home.html">Home</a>
+            <a href="./dishes.html">dishes</a>
+            <a href="#" onclick="openAbout()">about</a>
+            <a href="./contact.html" >Contact us</a>
+            <a class="feed" id="feedback">feedback</a>
+            <a href="#">Orders</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" id="shopping-list" class="fas fa-shopping-cart"></a>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <a href="login.html" class="fas fa-sign-in-alt"></a>
+            
+        </div>
+
+         <!--search form-->
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close1"></i>
+    </form>
+    <!--Search Form ends-->
+    </header>
+
+<!--Rating Form starts-->
+
+<div class="back">
+    <div class="container1" id="co1">
+        <div class="post">
+            <div class="text">Thanks for Rating us!</div>
+            <div class="edit">Edit</div>
+            <i class="fas fa-times" id="close"></i>
+    
+        </div>
+        <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+            <i class="fas fa-times" id="close"></i>
+            <h4></h4>
+            <div class="textarea">
+                <textarea cols="30" placeholder="Describe your experience"></textarea>
+    
+            </div>
+            
+            <div class="btn">
+                <button type="submit">Post</button>
+            </div>
+        </form>
+        </div>    
+    </div>
+    </div>
+<!--Rating form ends-->
+<!--side bar-->
+
+<nav class="sidebar">
+    <div class="text">
+    <a href="./Barbeque.html"><i class="fa fa-home"></i></a>
+    <ul>
+        <li><a href="#biryani" onclick="myfun()"> Menu</a></li>
+        <li><a href="#curry" onclick="mycurry()">Thali</a></li>
+        <li><a href="#start" onclick="myfunction()">Paneer</a></li>
+        <li><a href="#roti" onclick="myroti()">Roti's</a></li>
+        <li><a href="#fast" onclick="myfastfood()">Address & Map location</a></li>
+        
+    </ul>
+</div>
+</nav>
+<!--Side bar ends-->
+<section class="home" id="home">
+    <div class="barb">
+    <h2><img src="images/dubey-bhojnalaya-ranjhi-jabalpur-restaurants-evx2o78hdj.jpg" height="350"></h2>
+    <div class="cont">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/6DwRJRsgUW0?si=4ykV9vohrSkYIEtB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+        </iframe>
+        </div>
+        </div>
+</section>
+<section class="barb" id="biryani">
+    <h2 class="barbeque">Dubey Bhojnalaya</h2>
+   <br>
+  
+    <h4>Menu</h4>  
+    <div class="box-container">
+    <div class="box">
+        <img src="images/WhatsApp Image 2023-09-02 at 12.01.00 PM.jpeg" style="width: 50%;">
+        <h3>Menu</h3>
+     
+        
+    </div>  
+    <div class="box">
+        <img src="images/WhatsApp Image 2023-09-02 at 12.01.01 PM.jpeg" style="width: 50%;" >
+        <h3>Menu</h3>
+       
+    </div>       
+    
+</section>
+<section class="currys" id="curry">
+    <h2 class="barbeque">Dubey bojnalay</h2>
+    <hr class="line">
+    <h4>Thali</h4> 
+    <div class="box-curry">
+        <div class="box">
+            <img src="images/Normal thali.jfif">
+            <h3>Normal thali</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹80</span>
+            <br>
+          
+        </div>
+        <div class="box">
+            <img src="images/specialthali.jfif">
+            <h3> special thali</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹120</span>
+            <br>
+           
+        </div>
+        <div class="box">
+            <img src="images/specialthali.jfif">
+            <h3>Dubey Special Thali</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹150</span>
+            <br>
+           
+        </div>
+
+
+</section>
+
+
+<section class="starters" id="start">
+    <h2 class="barbeque">Dubey Bhojnalaya</h2>
+    <hr class="line">
+    <h4>Paneer</h4> 
+    <div class="box-starters">
+        <div class="box">
+            <img src="images/mutter paneer.jfif">
+            <h3>Matar Paneer</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹100</span>
+            <br>
+          
+        </div>
+        <div class="box">
+            <img src="images/paneerspecial.jfif">
+            <h3>Paneer Butter Masala</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹130</span>
+            <br>
+            
+        </div>
+        <div class="box">
+            <img src="images/paneerspecial.jfif">
+            <h3>Sahi paneer</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹140</span>
+            <br>
+           
+        </div>
+        <div class="box">
+            <img src="images/paneen korma.jfif">
+            <h3>Paneer Korma</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹140</span>
+            <br>
+           
+        </div>
+        <div class="box">
+            <img src="images/palak paneer.jfif">
+            <h3>Palak paneer</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹120</span>
+            <br>
+            
+        </div>
+        <div class="box">
+            <img src="images/muahroom mashala.jfif">
+            <h3>Mushroom Masala</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹150</span>
+            <br>
+           
+        </div>
+        <div class="box">
+            <img src="images/malikofta.jfif">
+            <h3>Malai kofta</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹160</span>
+            <br>
+          
+        </div>
+        <div class="box">
+            <img src="images/muahroom mashala.jfif">
+            <h3> Mushroom paneer </h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹150</span>
+            <br>
+          
+        </div>
+       
+
+</section>
+<section class="rotis" id="roti">
+    <h2 class="barbeque">Dubey Bhojnalaya</h2>
+    <hr class="line">
+    <h4>Roti's</h4> 
+    <div class="box-roti">
+        <div class="box">
+            <img src="images/tawa butter roti.jfif">
+            <h3> Tawa Butter-roti</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹8</span>
+            <br>
+           
+        </div>
+        <div class="box">
+            <img src="images/tandori butter.jfif">
+            <h3>Tandoori Roti</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹7</span>
+            <br>
+        
+        </div>
+        <div class="box">
+            <img src="images/tawa roti.jfif">
+            <h3> Tawa Roti</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹5</span>
+            <br>
+            
+        </div>
+        <div class="box">
+            <img src="images/tandori butter.jfif">
+            <h3>Tandori Butter-Roti</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹10</span>
+            <br>
+            
+        </div>
+      
+    
+
+</section>
+<section class="barb" id="fast">
+    <h2 class="barbeque">Dubey Bhojnalaya</h2>
+   <br>
+   
+    <hr class="line">
+    <h4>Menu</h4>  
+    <div class="box-container">
+    <div class="box">
+      
+        <h3>Address:Main ranjhi market in front of ranjhi police station</h3>
+     <br>
+     <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7334.647133529049!2d79.98649489357912!3d23.194875900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981aedac66030c7%3A0x1f2a6366e19c6384!2sDubey%20Bhojnalay!5e0!3m2!1sen!2sin!4v1693589802010!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        
+    </div>  
+          
+    
+</section>
+
+
+
+<div id="about" class="about">
+    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="about-overlay">
+        <h1>About us</h1>
+        <h1>Keshav Sharma   --  Sachin Dwivedi</h1>
+        <p>Launched in 2023, Our technology platform connects students and<br> 
+        room owners, serving their multiple needs. <br>
+        Students use our platform to search and discover rooms, read and write customer 
+        generated reviews and view and upload photos,<br> book rooms, book room and make 
+        payments when they reach the destination. On the other hand,<br> we provide room owners 
+        with industry-specific marketing tools which enable them to engage and acquire students<br> to 
+        grow their business while also providing a reliable <br>and efficient booking service. 
+        We also operate a one-stop procurement solution, <br>We ourselves check the hygine 
+        and comfortability of the rooms.<br> We also provide room owners with transparent 
+        and flexible earning opportunities. </p>
+    </div>
+</div>
+
+
+
+<!--Footer Section-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="footer-col" id="logo-space">
+                <ul>
+                    <i class="fa fa-utensils"></i>
+                    <span>Foodies.</span>
+                </ul>
+                <div class="map">
+                    <ul>
+                        <i class="fa fa-map-marker"></i>
+                            <span>Gokalpur,karn pg
+                            </span>
+                    </ul>
+                    </div>
+                <div class="mail">
+                    <ul>
+                        <i class="fas fa-inbox"></i>
+                        <span>
+                            support@foodies.com
+                        </span>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Foodies</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">Our services</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Payment policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">My orders</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment options</a></li>
+
+                </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Order Now</h4>
+                    <ul>
+                        <li><a href="#">Thali</a></li>
+                        <li><a href="#">Paneer</a></li>
+                        <li><a href="#">Roti</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+            
+
+</footer>
+
+<!--Home  ends-->
+
+
+<!--Java Script-->
+    <script>
+        let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+window.onscroll=() => {
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+}
+document.querySelector('#search-icon').onclick=() => {
+    document.querySelector('#search-form').classList.toggle('active');
+}
+document.querySelector('#close1').onclick=() => {
+    document.querySelector('#search-form').classList.toggle('active');
+}
+document.querySelector("#feedback").onclick=() =>{
+document.querySelector("#co1").classList.toggle("active");
+}
+document.querySelector("#close").onclick=() =>{
+document.querySelector("#co1").classList.toggle("active");
+
+}
+function myfun(){
+document.getElementById("biryani").style.display="block";
+}
+function myfunction(){
+document.getElementById("start").style.display="block";
+}
+function myroti(){
+document.getElementById("roti").style.display="block";
+}
+function mycurry(){
+document.getElementById("curry").style.display="block";
+}
+function increment() {
+      document.getElementById('demoInput').stepUp();
+   }
+function decrement() {
+      document.getElementById('demoInput').stepDown();
+   }
+const btn = document.querySelector("button");
+const post = document.querySelector(".post");
+const widget = document.querySelector(".star-widget");
+const editBtn = document.querySelector(".edit");
+
+btn.onclick = () =>{
+widget.style.display = "none";
+post.style.display = "block";
+editBtn.onclick = () =>{
+    widget.style.display = "block";
+    post.style.display = "none";
+}
+return false;
+}
+   function openAbout(){
+        document.getElementById("about").style.width = "100%";
+
+    }
+    function closeNav(){
+        document.getElementById("about").style.width = "0%";
+    }
+    function mygrocery(){
+        confirm("Order Now on Whatsapp click ok to continue");
+    }
+    </script>
+ 
+     
+    <!--JavaScript ends -->
+
+</body>
+</html>
