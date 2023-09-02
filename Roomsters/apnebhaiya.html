@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apne Bhaiya Building</title>
+    <link rel="shortcut icon" href="Images\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="apnebhaiya.css">
+    <script src="https://kit.fontawesome.com/e18cb82afc.js" crossorigin="anonymous"></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Header section start-->
+    <header>
+        <a href="#" class="logo"><i class="fa-sharp fa-solid fa-hotel" style="color: #ff5618;"></i>Roomsters.</a>
+        <nav class="navbar">
+            <a class="active" href="./home.html">Home</a>
+            <a href="./dishes.html">Rooms</a>
+            <a href="#" onclick="openAbout()">about</a>
+            <a href="./contact.html" >Contact us</a>
+            <a class="feed" id="feedback">feedback</a>
+            <a href="#">Bookings</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <a href="login.html" class="fas fa-sign-in-alt"></a>
+            
+        </div>
+
+         <!--search form-->
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close1"></i>
+    </form>
+    <!--Search Form ends-->
+    </header>
+
+<!--Rating Form starts-->
+
+<div class="back">
+    <div class="container1" id="co1">
+        <div class="post">
+            <div class="text">Thanks for Rating us!</div>
+            <div class="edit">Edit</div>
+            <i class="fas fa-times" id="close"></i>
+    
+        </div>
+        <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+            <i class="fas fa-times" id="close"></i>
+            <h4></h4>
+            <div class="textarea">
+                <textarea cols="30" placeholder="Describe your experience"></textarea>
+    
+            </div>
+            
+            <div class="btn">
+                <button type="submit">Post</button>
+            </div>
+        </form>
+        </div>    
+    </div>
+    </div>
+<!--Rating form ends-->
+<!--side bar-->
+
+<nav class="sidebar">
+    <div class="text">
+    <a href="./apnebhaiya.html"><i class="fa fa-home"></i></a>
+    <ul>
+        <li><a href="#facility" onclick="myfun()">Facilities</a></li>
+        <li><a href="#description" onclick="myfunction()">Room Description</a></li>
+        <li><a href="#rent" onclick="myroti()">Rent Info</a></li>
+        <li><a href="#contact" onclick="mycurry()">Contact Info</a></li>
+    </ul>
+</div>
+</nav>
+<!--Side bar ends-->
+<section class="home" id="home">
+    <div class="barb">
+    <h2><img src="./Images/Room/bhaiya-room.jpeg"></h2>
+    <div class="cont">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/omiujusIbdA?si=fYJZzAFihL3RjqIO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+        </iframe>
+        </div>
+        </div>
+</section>
+
+<section class="pizzamania" id="rent">
+    <h2 class="dominos">Apne Bhaiya Building</h2>
+    <hr class="line">
+    <h4>Rent Info</h4> 
+    <div class="box-mania" style="width: 300px;">
+        <div class="box" id="box-mania">
+            <span>₹1800  --  ₹3000</span>
+            <p>Double Room  --  Single Room</p>
+            <p>(excluding electricity charges)</p>
+        </div>
+    </div>
+</section>
+
+<section class="pizzamania" id="contact">
+    <h2 class="dominos">Apne Bhaiya Building</h2>
+    <hr class="line">
+    <h4>Contact Info</h4> 
+    <div class="box-mania">
+        <p>+91 9876543210</p>
+  <a href="https://api.whatsapp.com/send?phone=+918090882270&text=I want a room in your building Apne Bhaiya Building." class="btn" onclick=""><i class="fab fa-whatsapp"></i> Contact Here</a>
+    </div>
+</section>
+
+<section class="nonveg" id="description">
+    <h2 class="dominos">Apne Bhaiya Building</h2>
+    <hr class="line">
+    <h4>Description</h4> 
+    <div class="box-nonpizza">
+        <p>Apne Bhaiya Building is one of the best rooms ever found at Gokalpur, near JEC. <br>
+           It has many facilities and good family too. <br>
+           <span>Owner Name : </span> -- Apne Bhaiya </p>
+    </div>
+    <h4>Map Location</h4>
+    <div class="box-nonpizza">
+        <p>Straight from Laxmi Mandir, Gokalpur</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.4362392649064!2d79.98106567423972!3d23.19076741003266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ae1a0fb6a97d%3A0x4cf96e2d4a8ff761!2zNVhSTSs4RjIsIOCknOCkrOCksuCkquClgeCksCwg4KSu4KSn4KWN4KSvIOCkquCljeCksOCkpuClh-Cktg!5e0!3m2!1shi!2sin!4v1693574491079!5m2!1shi!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</section>
+
+<section class="veg" id="facility">
+    <h2 class="dominos">Apne Bhaiya Building</h2>
+    <hr class="line">
+    <h4>Facilities</h4>  
+    <div class="box-container">
+    <div class="box">
+        <img src="./Images/Facility/wifi.jpg">
+        <h3>Wi-Fi</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+
+        </div>
+    </div>
+    <div class="box">
+        <img src="./Images/Facility/bed.webp">
+        <h3>Single Bed</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+
+    </div>
+    <div class="box">
+        <img src="./Images/Facility/almirah.png" >
+        <h3>Almirah Rack</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+
+    </div>
+    
+</section>
+<!--Footer Section-->
+<div id="about" class="about">
+    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="about-overlay">
+        <h1>About us</h1>
+        <h1>Keshav Sharma   --  Sachin Dwivedi</h1>
+        <p>Launched in 2023, Our technology platform connects students and<br> 
+        room owners, serving their multiple needs. <br>
+        Students use our platform to search and discover rooms, read and write customer 
+        generated reviews and view and upload photos,<br> book rooms, book room and make 
+        payments when they reach the destination. On the other hand,<br> we provide room owners 
+        with industry-specific marketing tools which enable them to engage and acquire students<br> to 
+        grow their business while also providing a reliable <br>and efficient booking service. 
+        We also operate a one-stop procurement solution, <br>We ourselves check the hygine 
+        and comfortability of the rooms.<br> We also provide room owners with transparent 
+        and flexible earning opportunities. </p>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="footer-col" id="logo-space">
+                <ul>
+                    <i class="fa-sharp fa-solid fa-hotel" style="color: #ff5618;"></i></i>
+                    <span>Roomsters.</span>
+                </ul>
+                <div class="map">
+                    <ul>
+                        <i class="fa fa-map-marker"></i>                           
+                        <span>Near Laxmi Mandir, Gokalpur, Jabalpur, Madhya Pradesh - 482011</span>
+                    </ul>
+                    </div>
+                <div class="mail">
+                    <ul>
+                        <i class="fas fa-inbox"></i>
+                        <span>
+                            support@Roomsters.com
+                        </span>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Roomsters</h4>
+                <ul>
+                    <li><a href="#" onclick="openAbout()">about us</a></li>
+                    <li><a href="#">Our services</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Payment policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">My Bookings</a></li>
+                    <li><a href="#">Booking Status</a></li>
+                    <li><a href="#">Payment options</a></li>
+
+                </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Book Now</h4>
+                    <ul>
+                        <li><a href="./dishes.html">Low Budget</a></li>
+                        <li><a href="./dishes.html">Medium Budget</a></li>
+                        <li><a href="./dishes.html">High Budget</a></li>
+                        <li><a href="./dishes.html">Premium Booking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+            
+
+</footer>
+
+<!--Home  ends-->
+
+
+<!--Java Script-->
+    <script>
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+        
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+        window.onscroll=() => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        }
+        document.querySelector('#search-icon').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector('#close1').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector("#feedback").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+    }
+        document.querySelector("#close").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+
+    }
+    function myfun(){
+        document.getElementById("facility").style.display="block";
+    }
+    function myfunction(){
+        document.getElementById("description").style.display="block";
+    }
+    function myroti(){
+        document.getElementById("rent").style.display="block";
+    }
+    function mycurry(){
+        document.getElementById("contact").style.display="block";
+    }
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+    
+        btn.onclick = () =>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = () =>{
+            widget.style.display = "block";
+            post.style.display = "none";
+        }
+        return false;
+    }
+        function openAbout(){
+        document.getElementById("about").style.width = "100%";
+
+    }
+    function closeNav(){
+        document.getElementById("about").style.width = "0%";
+    }
+       
+    </script>
+    <!--JavaScript ends -->
+
+</body>
+</html>
