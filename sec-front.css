@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Norican&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(Images/jec-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    background-position: center center;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    line-height: 1.5;
+}
+.container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15rem;
+    gap: 10rem;
+}
+.logo{
+    width: 12%;
+    margin: 80px auto 2px;
+}
+h2{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.btn{
+    margin-top: 30px;
+    width: 220px;
+    height: 60px;
+    opacity: 1;
+    background-color: white;
+    line-height: 60px;
+    font-size: 24px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.btn a{
+    color: orangered;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: rgb(247, 206, 206);
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+@media(max-width: 786px){
+    .container{
+        padding-top: 5rem;
+        flex-direction: column;
+    }
+}
