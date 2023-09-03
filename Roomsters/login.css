@@ -148,3 +148,22 @@ body.active{
     color:#333;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+@media(max-width:786px){
+    .container{
+        margin: 0;
+    }
+    .formbx .form{
+        padding: 10px;
+    }
+    .loginbg .box h2{
+        padding-left: 50px;
+    }
+}
